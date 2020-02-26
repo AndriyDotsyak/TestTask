@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Test Task</string>
+
+    <!-- Activity Menu -->
+    <string name="am_date">01.01.1917</string>
+
+    <!-- Dialog Info -->
+    <string name="di_ok">OK</string>
+</resources>

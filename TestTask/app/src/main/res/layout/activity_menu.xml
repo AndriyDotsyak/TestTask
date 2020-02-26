@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.MenuActivity" >
+
+
+    <ImageView
+        android:id="@+id/image_view_background_AM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/bg_main_2160x3840"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/image_view_circle_AM"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@mipmap/tb_ph_flag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_view_date_AM"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@mipmap/tb_ph_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_date_AM"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/am_date"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/izhitsa"
+        app:layout_constraintTop_toTopOf="@+id/image_view_date_AM"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_date_AM"
+        app:layout_constraintStart_toStartOf="@+id/image_view_date_AM"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_date_AM" />
+
+    <ImageButton
+        android:id="@+id/image_button_menu_AM"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="100dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/se_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_circle_AM" />
+
+    <ImageButton
+        android:id="@+id/image_button_shop_AM"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/se_shop"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_circle_AM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_menu_AM" />
+
+    <ImageButton
+        android:id="@+id/image_button_normal_AM"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/se_normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_circle_AM"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_button_pause_AM"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="185dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/se_pause"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_button_accelerated_AM"
+        android:layout_width="210dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="185dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/se_accelerated"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
